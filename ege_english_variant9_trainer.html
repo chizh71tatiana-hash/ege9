@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ЕГЭ Английский язык — Вариант 9</title>
+<style>
+:root{
+  --bg:#fff8ed; --card:#ffffff; --ink:#23242a; --muted:#676b75;
+  --red:#9b1c31; --red2:#c03448; --gold:#f2b84b; --gold2:#ffe3a3;
+  --green:#237a49; --bad:#b3261e; --blue:#18385f; --line:#ead7b3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,"Helvetica Neue",sans-serif;background:radial-gradient(circle at top left,#fff1ce 0,#fff8ed 28%,#fdf5e8 100%);color:var(--ink);}
+header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,var(--red),#6f1324);color:#fff;padding:18px 22px;box-shadow:0 8px 24px rgba(60,20,20,.25)}
+.header-inner{max-width:1180px;margin:auto;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+h1{font-size:26px;margin:0;letter-spacing:.2px}.subtitle{margin:6px 0 0;color:#ffe9bb;font-size:14px}.top-actions{display:flex;gap:10px;flex-wrap:wrap}.pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:8px 12px;border-radius:999px;font-weight:700;color:#fff;font-size:13px}
+.layout{max-width:1180px;margin:22px auto;display:grid;grid-template-columns:260px 1fr;gap:20px;padding:0 14px}
+nav{position:sticky;top:112px;align-self:start;background:rgba(255,255,255,.78);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:0 10px 24px rgba(105,58,16,.08)}
+nav a, .resetBtn{display:block;text-decoration:none;color:var(--blue);background:#fff;border:1px solid #f0dfbd;padding:10px 12px;margin:7px 0;border-radius:14px;font-weight:800;font-size:14px;transition:.2s}
+nav a:hover,.resetBtn:hover{transform:translateY(-1px);border-color:var(--gold);box-shadow:0 5px 14px rgba(194,120,27,.14)}
+.resetBtn{width:100%;cursor:pointer;color:#fff;background:linear-gradient(135deg,var(--red2),var(--red));border:none;margin-top:12px}
+main{min-width:0}.hero,.section,.task,.criteria,.final{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:26px;padding:22px;margin-bottom:18px;box-shadow:0 12px 28px rgba(105,58,16,.08)}
+.hero{background:linear-gradient(135deg,#fff,#fff6df)}
+.hero h2,.section h2{margin:0 0 10px;color:var(--red)}
+.note{background:#fff4d7;border-left:6px solid var(--gold);border-radius:14px;padding:13px 14px;margin:14px 0;color:#49330c;font-weight:700}.small{font-size:13px;color:var(--muted);line-height:1.55}.section-title{display:flex;align-items:center;gap:10px}.badge{background:var(--gold2);color:#6e3f02;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900;border:1px solid #f1c86a}
+.task h3{margin:0 0 12px;color:#18385f}.task-text{line-height:1.58}.task-text ol,.task-text ul{padding-left:22px}.task-text li{margin:5px 0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.quote{background:#f8fbff;border:1px solid #d7e4f5;border-radius:16px;padding:14px;line-height:1.55}
+.answerBox{margin-top:16px;background:#fffaf1;border:1px dashed #d9b15e;border-radius:18px;padding:14px}.answerLine{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.answerLine label{font-weight:900;color:#56360b}.answerLine input{flex:1;min-width:160px;padding:12px 14px;border-radius:14px;border:2px solid #ead39c;font-size:18px;font-weight:900;letter-spacing:1px;text-transform:uppercase;background:#fff}.answerLine input:disabled{background:#f2f2f2;color:#555;border-color:#cfcfcf}.checkBtn{border:0;border-radius:14px;padding:13px 18px;font-weight:900;cursor:pointer;color:#fff;background:linear-gradient(135deg,var(--gold),#d88713);box-shadow:0 8px 16px rgba(194,120,27,.2);transition:.2s}.checkBtn:hover{transform:translateY(-1px);filter:saturate(1.05)}.checkBtn:disabled{background:#999;cursor:not-allowed;box-shadow:none;transform:none}.feedback{margin-top:12px;padding:12px 14px;border-radius:14px;font-weight:800;display:none}.feedback.ok{display:block;background:#eaf7ef;color:var(--green);border:1px solid #b8e0c8}.feedback.bad{display:block;background:#fff0ef;color:var(--bad);border:1px solid #f0bbb6}.explain{font-weight:500;color:#3f3f46;margin-top:8px;line-height:1.5}.correct{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#fff;border-radius:8px;padding:2px 6px;border:1px solid #ead39c}.table{width:100%;border-collapse:separate;border-spacing:0;margin:12px 0;overflow:hidden;border-radius:14px;border:1px solid var(--line)}.table th,.table td{padding:10px;border-bottom:1px solid #f0dfbd;vertical-align:top}.table th{background:#fff0cb;text-align:left;color:#5c3602}.table tr:last-child td{border-bottom:0}.final{background:linear-gradient(135deg,#ffffff,#fff1cc);border:2px solid var(--gold)}.scoreBig{font-size:26px;font-weight:1000;color:var(--red);margin:8px 0}.hidden{display:none!important}.options{columns:2;column-gap:26px}.options div{break-inside:avoid;margin:4px 0}.audioBox{background:#fdfdfd;border:1px solid #ecd6a7;border-radius:18px;padding:15px;margin:14px 0}audio{width:100%}.writing-card{background:#f8fbff;border:1px solid #d7e4f5;border-radius:18px;padding:16px;margin-top:12px}.mutedBox{background:#f4f4f5;border:1px solid #ddd;border-radius:16px;padding:13px;color:#4b5563}
+@media(max-width:860px){.layout{grid-template-columns:1fr}nav{position:static}.grid2{grid-template-columns:1fr}.options{columns:1}header{position:static}}
+</style>
+</head>
+<body>
+<header><div class="header-inner"><div><h1>ЕГЭ Английский язык — Вариант 9</h1><p class="subtitle">Интерактивный билет: аудирование, чтение, грамматика и лексика, письменная речь</p></div><div class="top-actions"><span class="pill">Ответы вводить ЗАГЛАВНЫМИ БУКВАМИ</span><span class="pill" id="progressPill">Проверено: 0/36</span></div></div></header>
+<div class="layout">
+<nav>
+  <a href="#rules">Правила</a><a href="#listening">1. Аудирование</a><a href="#reading">2. Чтение</a><a href="#grammar">3. Грамматика и лексика</a><a href="#writing">4. Письменная речь</a><a href="#criteria">Критерии оценивания</a><a href="#result">Итог</a>
+  <button class="resetBtn" onclick="location.reload()">Начать билет заново</button>
+</nav>
+<main>
+<section class="hero" id="rules"><h2>Правила тренажёра</h2><div class="note">На ЕГЭ ответы записываются ЗАГЛАВНЫМИ БУКВАМИ, без пробелов и лишних знаков. Например: <b>571426</b>, <b>AREASKED</b>, <b>UNIVERSAL</b>.</div><p>После ввода ответа нажмите кнопку «Проверить». Ответ сразу фиксируется: изменить его уже нельзя. Пересдача возможна только при прохождении всего билета заново.</p><p class="small"> <b></b> .</p></section>
+<section class="section" id="listening"><div class="section-title"><h2>Раздел 1. Аудирование</h2><span class="badge">максимум 12 баллов</span></div><div class="audioBox"><b>Аудиофайл к разделу</b><audio controls src="1.mp3">Ваш браузер не поддерживает аудио.</audio></div>
+
+<div class="task" id="task1"><h3>Задание 1</h3><div class="task-text"><p>Вы услышите 6 высказываний. Установите соответствие между высказываниями каждого говорящего A–F и утверждениями 1–7. Используйте каждое утверждение только один раз. В задании есть одно лишнее утверждение.</p><ol><li>Lots of qualities make a teacher good.</li><li>Being attentive to students is the key.</li><li>Best teachers never stop learning themselves.</li><li>Classroom management was her superpower.</li><li>Her way of teaching drew me to the lessons.</li><li>I grew and developed, thanks to my teacher.</li><li>The teacher helped everyone understand the subject.</li></ol></div><div class="answerBox" data-q="1" data-answer="571426" data-points="2" data-type="group6"><div class="answerLine"><label>Ответ:</label><input placeholder="Например: 123456" maxlength="6"><button class="checkBtn">Проверить</button></div><div class="feedback"></div></div></div>
+
+<div class="task" id="task2"><h3>Задание 2</h3><div class="task-text"><p>Определите, какие утверждения A–G соответствуют содержанию текста: 1 — True, 2 — False, 3 — Not stated.</p><ol type="A"><li>Ben is listening to Alice reading an article.</li><li>Ben thinks the idea of chivalry is outdated.</li><li>In Russia, men are expected to pay on first dates.</li><li>Alice has a sister who is ten years younger.</li><li>Ben is comfortable paying for his date.</li><li>Alice has changed Ben’s view on dating norms.</li><li>Ben will probably buy Alice a coffee on a future date.</li></ol></div><div class="answerBox" data-q="2" data-answer="2332111" data-points="3" data-type="group7"><div class="answerLine"><label>Ответ:</label><input placeholder="Например: 1231231" maxlength="7"><button class="checkBtn">Проверить</button></div><div class="feedback"></div></div></div>
+
+<div class="task"><h3>Задания 3–9</h3><p class="task-text">Вы услышите интервью. В заданиях 3–9 запишите одну цифру 1, 2 или 3, соответствующую выбранному варианту ответа.</p>
+<div id="single-listening"></div></div>
+</section>
+
+<section class="section" id="reading"><div class="section-title"><h2>Раздел 2. Чтение</h2><span class="badge">максимум 12 баллов</span></div>
+<div class="task" id="task10"><h3>Задание 10</h3><div class="task-text"><p>Установите соответствие между текстами A–G и заголовками 1–8. Используйте каждую цифру только один раз. В задании есть один лишний заголовок.</p><div class="options"><div>1. One’s perfect diet</div><div>2. Not easy to buy</div><div>3. Is it always healthy?</div><div>4. Not only about quality</div><div>5. What’s in a name?</div><div>6. Cheap but healthy</div><div>7. An image that works</div><div>8. Simply the best foods</div></div>
+<p><b>A.</b> Superfoods are foods containing lots of vitamins, minerals, and antioxidants that are good for one’s health. Superfoods are mostly plant-based but also include some fish and dairy. However, “superfood” is not a scientifically-recognised term, with no set criteria to decide what is and is not a superfood. Superfoods do not belong to any food group. It is more of a marketing term for foods that have benefits. Superfoods often have no more health benefits than other nutritionally useful foods.</p>
+<p><b>B.</b> Superfoods, like blueberries, salmon, and kale, are nutritionally very valuable. They contain antioxidants, which are thought to prevent cancer and other serious diseases. Though they might be quite expensive, they are useful indeed, and they are sold in most supermarkets. Some foods, like salmon, also have healthy fats, which can help to prevent heart disease. High-fibre foods, like kale, can promote good digestion and provide a sense of fullness, which can help in weight loss.</p>
+<p><b>C.</b> Scientists say that the use of the term “superfood” is just a marketing tool, with no roots in academic research. Still, manufacturers rely heavily on marketing tricks to shape people’s opinion about their products. Trying to change public view on the health benefits of macadamia nuts, for example, their manufacturers persuaded authorities to make a claim linking the consumption of macadamia nuts to a reduced risk of heart disease. The findings were not very impressive, but they worked for the macadamia nut industry.</p>
+<p><b>D.</b> Another general criticism of “superfood” is that, while the food itself might be healthy, the processing might not be. For example, when green tea is freshly brewed, it has several antioxidants. Commercially manufactured bottled green tea, however, is often made with a lot of sugar. Many kinds of “super-juices” squeezed from acai berry and pomegranate can also include large amounts of added sugar. So they are not as healthy as they may initially seem.</p>
+<p><b>E.</b> Eating foods that are packed with nutrients, as many so-called superfoods are, is certainly a good idea. However, the key to a healthy diet is to eat a variety of nutritious foods in the right quantities. When we label these foods as “super” and “healthy”, people think they can eat them in unlimited quantities. But people have to be cautious of the amount of food they eat, because one can gain weight from eating too much healthy food. So, it is always better to eat everything in moderation.</p>
+<p><b>F.</b> Superfoods may be a good step towards healthy eating. Besides, understanding the nutritional value of the food a person eats can be useful. However, there are lots of healthy foods that are not expensive, even if no one is calling them “super.” Plenty of affordable foods that do not carry a “superfood” label are still nutritionally useful. Good examples are canned peas and carrots. Moreover, they can be more accessible to those people who have a low income or who have less access to fresh fruit and vegetables.</p>
+<p><b>G.</b> Research has shown that the ideal diet is the one that is mostly plant-based, with a wide variety of fruit, vegetables, whole grains, and healthy animal products. A healthy, balanced diet looks different for each person, as nutrition needs vary based on gender, height, weight, activity level, and many other factors. When thinking about what is “healthy” and “balanced” for an individual, there are many considerations. One has to think about taste preferences, nutrition needs, cooking ability, medical condition, and budget.</p></div><div class="answerBox" data-q="10" data-answer="5873461" data-points="3" data-type="group7"><div class="answerLine"><label>Ответ:</label><input placeholder="Например: 1234567" maxlength="7"><button class="checkBtn">Проверить</button></div><div class="feedback"></div></div></div>
+
+<div class="task" id="task11"><h3>Задание 11</h3><div class="task-text"><p>Прочитайте текст и заполните пропуски A–F частями предложений 1–7. Одна часть в списке лишняя.</p><h4>Place to visit</h4><p>The Republic of Tatarstan is set at the confluence of the Volga and Kama Rivers. The territory of Tatarstan has 43 localities, including two large cities: Kazan and Naberezhnye Chelny. Kazan, with a population of 1.3 million people, is the capital of the Tatarstan Republic. The city is located 797 km east of Moscow. <b>A ____</b></p><p>Kazan is a blend of diverse cultures and religions. <b>B ____</b> One can admire Tatar architecture in the Old Tatar village. Also called the Staro-tatarskaya Sloboda, this suburb is a well-preserved historic part of Kazan. <b>C ____</b> Its colourful houses on the banks of Kaban Lake have fine examples of authentic Tatar buildings, old wooden houses with traditional decorations, shops, cafés, and religious structures. This fantastic destination should definitely be visited by tourists. <b>D ____</b></p><p>Among the impressive sights to visit during a tour to Kazan is the Kul Sharif Mosque. It is located on the territory of the Kazan Kremlin. It is one of the largest mosques in Europe, serving <b>E ____</b>. It took almost 10 years to restore the building of the mosque on the place where it stood originally, and was completed in 2005. <b>F ____</b> Today, the white and blue mosque is among the city’s best-recognised landmarks.</p><ol><li>and it is home to outstanding architecture</li><li>as they are nicely rebuilt and redecorated</li><li>which is not that far by Russian standards</li><li>which was chosen as a place of living</li><li>by the time of the city’s 1000th birthday</li><li>while travelling around the region</li><li>as home to a rich collection of ancient books</li></ol></div><div class="answerBox" data-q="11" data-answer="314675" data-points="2" data-type="group6"><div class="answerLine"><label>Ответ:</label><input placeholder="Например: 123456" maxlength="6"><button class="checkBtn">Проверить</button></div><div class="feedback"></div></div></div>
+
+<div class="task"><h3>Задания 12–18</h3><div class="task-text"><h4>Cleaner energy</h4><p>Faster than many thought possible, and despite long doubt about renewable energy’s practicality, a momentous transformation is now well underway. We are moving from an economy fuelled primarily by climate-warming fossil fuels, to one in which we will cleanly pluck most of our energy out of water, wind and the fire in the sky. Let’s try to figure out which type can better suit your needs.</p><p>For suburban settings and applications, solar power is usually the best choice. As solar panels can be installed on the rooftops of houses, schools, and businesses, they are more practical for suburban or urban regions. Transparent solar panels are coming to retrofit roofs and windows. A solar power system has no moving parts and is less space-consuming. It has better reliability and a 25-year warranty. Moreover, solar is totally silent in operation. Solar power is also less susceptible to lightning and high wind damage. Solar requires less monitoring and less maintenance, and provides a more predictable energy output. It allows for quicker installation with minimal visual colour.</p><p>On the other hand, a wind turbine is comfortable in rural areas. Most of the local government authorities are against erecting wind turbines in townships, as it creates noise and might raise complaints from the neighbours. While wind turbines are not suitable for urban areas, they are ideal for rural regions, far from cities, that are most in need of power. A wind turbine can generate the same amount of electricity as about 48,704 solar panels. It can be built on existing farms or ranches. It doesn’t affect the farmers working in that land, as it uses only a fraction of the land. They will also receive the rent paid by wind power plant owners for using their land.</p><p>The main concerns of wind turbines are the noise from moving parts and visual impacts to the landscape. Wind turbines affect local wildlife, as birds and bats get killed by the spinning of turbine blades. The downside of wind energy is that it is not always strong enough to turn a turbine. And sometimes it is too strong and can damage it. And finally, wind turbines need regular maintenance because of their moving parts.</p><p>The efficiency of solar panels and wind turbines is dependent on how well they can convert sunlight or wind into usable electricity. Even the most efficient solar panels convert only about 22% of energy harnessed from sunlight into actual electrical energy. Wind turbines can convert up to 60% of the energy they harness from the wind into usable electrical energy. Wind power is more efficient, but it is not easy to capitalise on wind power, whereas utilising solar power is much easier.</p><p>Based on the daily usage of electricity, the average amount of sunshine received, and the individual output of panels, one would need around 24 solar panels to meet the energy demands of an average household of six. On average, solar panel costs will range between $11,000 and $15,000, not including installation costs. Annual average wind speed of an area and the size and energy needs of a house determine whether a wind turbine can power a house. Based on the size and height of the turbine and the equipment used, an average wind turbine installation will cost somewhere between $50,000 and $70,000.</p><p>That all may sound very expensive now, but in the last decade, solar power capacity has increased by 20 times. Solar cost is predicted to decline 40 times in 30 years, and wind cost by 80 times in 40 years.</p><p>All in all, there can never be one clear winner in such things, as it is not a race in which all the industries are competing. The path to a low-carbon future is not just solar energy or just wind energy, but the two technologies working in tandem.</p></div><div id="single-reading"></div></div>
+</section>
+
+<section class="section" id="grammar"><div class="section-title"><h2>Раздел 3. Грамматика и лексика</h2><span class="badge">максимум 18 баллов</span></div>
+<div class="task"><h3>Задания 19–24. Грамматика</h3><p class="small">Измените грамматическую форму слова так, чтобы оно соответствовало содержанию текста.</p><div id="grammar-forms"></div></div>
+<div class="task"><h3>Задания 25–29. Словообразование</h3><p class="small">Образуйте родственное слово нужной части речи.</p><div id="word-formation"></div></div>
+<div class="task"><h3>Задания 30–36. Лексика</h3><p class="small">Выберите один правильный вариант из четырёх.</p><div id="lexis"></div></div>
+</section>
+
+<section class="section" id="writing"><div class="section-title"><h2>Раздел 4. Письменная речь</h2><span class="badge">максимум 20 баллов</span></div><div class="note">В тренажёре письмо и эссе писать не нужно. Отправь готовое эссе и письмо учителю.</div>
+<div class="writing-card"><h3>Задание 37. Электронное письмо</h3><p>You have received an email message from your English-speaking pen-friend Ted:</p><div class="quote"><p><b>From:</b> Ted@mail.uk<br><b>To:</b> Russian_friend@ege.ru<br><b>Subject:</b> History</p><p>…I’ve found my grandpa’s photos of our town 50 years ago. The place has changed a lot! Do your prefer learning about history through pictures and artefacts or by reading historical documents? Which period in your country or region’s history are you most interested in learning about? Do you think knowing history is important, and why?</p><p>Last weekend, I went hiking with my family…</p></div><p>Write an email to Ted. In your message: answer his questions; ask 3 questions about the hiking trip. Write 100–140 words.</p></div>
+<div class="writing-card"><h3>Задание 38. Проектная работа</h3><h4>38.1 Technological advancements</h4><p>Imagine that you are doing a project on technological advancements Zetland teenagers are most excited about. You have found some data on the subject — the results of a survey conducted among Zetland teenagers (see the table below). Comment on the survey data and give your opinion on the subject of the project.
+The survey question:
+What technological advancement are you most excited about?
+Choose one option</p><table class="table"><tr><th>Option</th><th>Number of respondents (%)</th></tr><tr><td>Breakthroughs in medicine</td><td>36</td></tr><tr><td>Eco-friendly decisions</td><td>24</td></tr><tr><td>Personalised learning technologies</td><td>19</td></tr><tr><td>Hyper-speed transportation</td><td>12</td></tr><tr><td>Advanced translation technologies</td><td>9</td></tr></table><h4>38.2 Local aspects</h4><p>Imagine that you are doing a project on local aspects that Zetland teenagers are most proud of. You have found some data on the subject — the results of a survey conducted among Zetland teenagers (see the pie chart below).
+Comment on the survey data and give your opinion on the subject of the project.
+The survey question:
+What aspect of your country are you most proud of?
+Choose one option</p><table class="table"><tr><th>Option</th><th>Number of respondents (%)</th></tr><tr><td>Cultural diversity</td><td>38</td></tr><tr><td>Natural beauty</td><td>32</td></tr><tr><td>Sense of community</td><td>13</td></tr><tr><td>Historical attractions</td><td>11</td></tr><tr><td>Artistic heritage</td><td>6</td></tr></table><p>Write 200–250 words. Use the plan from the exam task.</p></div></section>
+
+<section class="criteria" id="criteria"><h2>Критерии оценивания</h2><table class="table"><tr><th>Раздел</th><th>Максимум</th><th>Что входит</th></tr><tr><td>Аудирование</td><td>12</td><td>Задание 1 — до 2; задание 2 — до 3; задания 3–9 — по 1.</td></tr><tr><td>Чтение</td><td>12</td><td>Задание 10 — до 3; задание 11 — до 2; задания 12–18 — по 1.</td></tr><tr><td>Грамматика и лексика</td><td>18</td><td>Задания 19–24 — 6; 25–29 — 5; 30–36 — 7.</td></tr><tr><td>Письменная речь</td><td>20</td><td>Задание 37 — до 6; задание 38 — до 14. Проверяет учитель.</td></tr><tr><th>Итого за письменную часть</th><th>62</th><th>Остальные 20 баллов — устная часть.</th></tr></table></section>
+<section class="final" id="result"><h2>Итог тренажёра</h2><p class="small">Итог появится полностью после проверки всех заданий 1–36.</p><div class="scoreBig" id="scoreText">Пока проверено: 0/36</div><div id="scoreDetails"></div></section>
+</main></div>
+<script>
+const data = {
+  singleListening:[
+    [3,'What time does the radio show begin?','1) 5 p.m.  2) 7.15 p.m.  3) 8.40 p.m.','2'],
+    [4,'What do we learn about Dr. Amelia Moore at the beginning of the interview?','1) She teaches sociology. 2) She organises conferences. 3) She develops youth communities.','1'],
+    [5,'Why do teenagers need communities?','1) They help teens deal with critics. 2) They allow teens to hide there at times. 3) They provide assistance and compassion.','3'],
+    [6,'According to Dr. Moore, the use of social media...','1) creates a false sense of connection. 2) does not help in developing social skills. 3) offers real-life experience and interaction.','1'],
+    [7,'What unites all community activities, according to Dr. Moore?','1) They are easy to join. 2) They are team activities. 3) They have a common goal.','3'],
+    [8,'Dr. Moore compares volunteering with a two-way street, to show that it...','1) might turn into a passion. 2) makes teens’ lives better. 3) encourages responsibility.','2'],
+    [9,'Which is NOT mentioned as a way to motivate teens to join communities?','1) Encouraging teens to try out new things. 2) Discussing the advantages of collaboration. 3) Identifying interests of teachers and parents.','3']
+  ],
+  reading:[
+    [12,'As stated in the first paragraph, the author’s main aim in the article is to...','1) debate the practical value of renewable energy. 2) compare different kinds of energy. 3) explain how clean energy will transform our world. 4) warn against the use of traditional energy.','2','В первом абзаце автор прямо говорит: “Let’s try to figure out which type can better suit your needs”, затем сравнивает solar и wind energy.'],
+    [13,'Which is FALSE about solar power, according to the text?','1) Solar panels can be installed even on windows. 2) It helps to avoid creating noise pollution. 3) It is possible to calculate how much energy you will get. 4) Solar panels can be easily destroyed by lightning.','4','В тексте сказано наоборот: solar is less susceptible to lightning and high wind damage. Значит, утверждение 4 ложное.'],
+    [14,'It in “It allows for quicker installation” most probably refers to...','1) energy output. 2) solar energy. 3) monitoring. 4) maintenance.','2','Весь абзац описывает solar power / solar system. Поэтому местоимение It относится к solar energy.'],
+    [15,'Compared to solar energy, wind turbines are...','1) better for remote locations. 2) producing less energy. 3) dangerous for farm lands. 4) supported by the government.','1','В тексте сказано, что wind turbines are ideal for rural regions, far from cities, that are most in need of power.'],
+    [16,'Which is NOT mentioned in the text as a disadvantage of wind turbine?','1) Spoiling the scenery. 2) Requiring a lot of care. 3) A possibility of being damaged. 4) Destroying animals’ homes.','4','Упомянуты noise, visual impacts, death of birds and bats, damage and maintenance. Про destroying animals’ homes не говорится.'],
+    [17,'It can be inferred from the article that...','1) solar panels are more efficient than wind turbines. 2) solar energy is more expensive than wind energy. 3) solar panel initial costs are lower than those for wind turbines. 4) wind power cost is decreasing faster than solar power cost.','3','В тексте указано: solar panels $11,000–$15,000, wind turbine $50,000–$70,000. Значит, начальные расходы на солнечные панели ниже.'],
+    [18,'What conclusion does the author come to at the end of the article?','1) Solar energy is developing faster than wind energy. 2) It is up to industries to choose which type works best. 3) The combination of wind and solar energy is the best choice. 4) It doesn’t matter which type is used as long as it is renewable.','3','Финальная мысль: the path to a low-carbon future is not just solar or just wind, but the two technologies working in tandem.']
+  ],
+  grammarForms:[
+    [19,'Some people think that a speaking test in English is very difficult because you can be asked questions about all kinds of subjects. However, you ______ to be an expert on these subjects in order to pass the test.','NOT NEED',['DONOTNEED','DONTNEED','DON’TNEED'],'Нужно отрицание в Present Simple: you do not need. В бланке пишем слитно: DONOTNEED или DONTNEED.'],
+    [20,'That means when you ______ about history, you do not have to be a historian in order to answer it.','ASK',['AREASKED','REASKED','’REASKED'],'Подлежащее you получает действие, значит нужен Passive Voice: you are asked.'],
+    [21,'A simple answer like this will be fine, “Yes, I find it quite interesting. I enjoy ______ books on history.”','READ',['READING'],'После enjoy используется герундий: enjoy reading.'],
+    [22,'I love history. For years, I ______ learning about the past. In my spare time, I read books about ancient Japan, medieval Russia or Mayan culture.','ENJOY',['HAVEENJOYED','VEENJOYED','’VEENJOYED','HAVEBEENENJOYING','VEBEENENJOYING','’VEBEENENJOYING'],'For years показывает действие, начавшееся в прошлом и продолжающееся сейчас. Подходят Present Perfect или Present Perfect Continuous.'],
+    [23,'All of this is really interesting to me, and so I ______ no problem if I were asked about my favourite historical period.','HAVE',['WOULDHAVE','DHAVE','’DHAVE'],'Условная конструкция с if I were asked требует would have.'],
+    [24,'However, this could be a difficult question for some people. After all, it is not a common part of daily conversation! Most people ______ down with a friend and say, “You know what period of history I really like...”','NOT SIT',['DONOTSIT','DONTSIT','DON’TSIT'],'Речь об обычной ситуации, нужен Present Simple negative: most people do not sit.']
+  ],
+  wordFormation:[
+    [25,'Smiling improves mood and health. It helps to release endorphins and that makes us feel a lot more positive and happier throughout the day. That, in turn, keeps a ______ balance and improves our mental well-being.','HEALTH',['HEALTHY'],'Перед существительным balance нужно прилагательное: healthy balance.'],
+    [26,'Smiling gives us an air of confidence and that reflects in our ______.','PERSONAL',['PERSONALITY'],'После our нужно существительное: personality.'],
+    [27,'We stay in ______ with our desires and make the right choices and attract the right people or opportunities for us.','AGREE',['AGREEMENT'],'Устойчивая конструкция: in agreement with.'],
+    [28,'Smiling is a ______ language that keeps us all united. It helps to build an unshakeable bond that may turn into a relationship for a lifetime.','UNIVERSE',['UNIVERSAL'],'Нужно прилагательное к слову language: universal language.'],
+    [29,'Smiling creates a ripple effect by spreading the curve on other faces, too. It ______ the day and fills everyone around with hope and optimism.','BRIGHT',['BRIGHTENS'],'Подлежащее it, Present Simple: brightens.']
+  ],
+  lexis:[
+    [30,'Emmie thought she had nothing to do this night. Then she ______ about her sister’s present — the DVDs.','1) reminded  2) resembled  3) remembered  4) reviewed','3','Нужно значение “вспомнила”: remembered. Reminded требует объект: someone reminded her.'],
+    [31,'She got the first disc out, and put it in the DVD-player attached to the TV in her room. She could ______ wait for the film to start.','1) rarely  2) really  3) merely  4) hardly','4','Could hardly wait — устойчивое выражение: “едва могла дождаться”.'],
+    [32,'The screen sprang to life with the first scene of Bedford Castle. She hoped into bed, pulled up the covers, and turned ______ the light as the first episode began.','1) off  2) on  3) at  4) in','1','Turn off the light — выключить свет.'],
+    [33,'She liked to watch films in the dark. She was ______ by the beauty all around.','1) improved  2) impressed  3) influenced  4) interested','2','Be impressed by — быть впечатлённым чем-то.'],
+    [34,'The castle, with enormous paintings and elegant antiques. It had a superb feel to it, with a fleet of servants, and a family ______ of all the important actors on the show.','1) containing  2) consisting  3) involving  4) including','2','Family consisting of... — семья, состоящая из. Including означало бы “включая”, но грамматически здесь нужен оборот with a family consisting of.'],
+    [35,'Several of the men looked familiar to her, even though it was a French production, but she had seen them in movies. It was everything that ______ to her in French books and movies.','1) amused  2) attracted  3) amazed  4) appealed','4','Appealed to her — “привлекало её, нравилось ей”. После appealed требуется to, и оно есть в тексте.'],
+    [36,'The performance was flawless,and the dialogue brilliantly written.The story was engaging, the characters perfectly defined in their roles as good or bad people. It was a wonderful show. She was in love with the characters, and ______ by the castle and the staff. She felt as though she had been pulled into a different world, where her own life ceased to matter; only theirs did.','1) fascinating  2) interested  3) fascinated  4) interesting','3','После she was / became implied нужно состояние человека: fascinated. Interesting/fascinating описывают предмет, а не состояние героини.']
+  ]
+};
+
+function makeSingle(containerId, items){
+ const c=document.getElementById(containerId);
+ items.forEach(([q,question,opts,ans,exp])=>{
+  const div=document.createElement('div');div.className='answerBox';div.dataset.q=q;div.dataset.answer=ans;div.dataset.points=1;div.dataset.type='single'; if(exp) div.dataset.exp=exp;
+  div.innerHTML=`<div class="task-text"><p><b>${q}.</b> ${question}</p><p>${opts}</p></div><div class="answerLine"><label>Ответ:</label><input maxlength="20" placeholder="1, 2, 3 или 4"><button class="checkBtn">Проверить</button></div><div class="feedback"></div>`;
+  c.appendChild(div);
+ });
+}
+function makeOpen(containerId, items){
+ const c=document.getElementById(containerId);
+ items.forEach(([q,text,word,answers,exp])=>{
+  const div=document.createElement('div');div.className='answerBox';div.dataset.q=q;div.dataset.answer=answers[0];div.dataset.answers=answers.join('|');div.dataset.points=1;div.dataset.type='single';div.dataset.exp=exp;
+  div.innerHTML=`<div class="task-text"><p><b>${q}.</b> ${text}</p><p class="small">Опорное слово: <b>${word}</b></p></div><div class="answerLine"><label>Ответ:</label><input maxlength="40" placeholder="Введите слово"><button class="checkBtn">Проверить</button></div><div class="feedback"></div>`;
+  c.appendChild(div);
+ });
+}
+function makeLexis(containerId, items){
+ const c=document.getElementById(containerId);
+ items.forEach(([q,text,opts,ans,exp])=>{
+  const div=document.createElement('div');div.className='answerBox';div.dataset.q=q;div.dataset.answer=ans;div.dataset.points=1;div.dataset.type='single';div.dataset.exp=exp;
+  div.innerHTML=`<div class="task-text"><p><b>${q}.</b> ${text}</p><p>${opts}</p></div><div class="answerLine"><label>Ответ:</label><input maxlength="1" placeholder="1–4"><button class="checkBtn">Проверить</button></div><div class="feedback"></div>`;
+  c.appendChild(div);
+ });
+}
+makeSingle('single-listening', data.singleListening);
+makeSingle('single-reading', data.reading);
+makeOpen('grammar-forms', data.grammarForms);
+makeOpen('word-formation', data.wordFormation);
+makeLexis('lexis', data.lexis);
+
+const checked = new Map();
+function norm(s){return (s||'').toUpperCase().replace(/\s+/g,'').replace(/[’`]/g,"'").trim();}
+function groupScore(type,user,answer){
+ let matches=0; for(let i=0;i<answer.length;i++){ if(user[i]===answer[i]) matches++; }
+ if(type==='group6'){ return {matches, points: matches>=5?2:(matches===4?1:0)}; }
+ if(type==='group7' && answer.length===7){
+   const q = event?.target?.closest('.answerBox')?.dataset.q;
+   if(q==='2') return {matches, points: matches===7?3:(matches===6?2:(matches===5?1:0))};
+   if(q==='10') return {matches, points: matches===7?3:(matches===6?2:(matches===5?1:0))};
+ }
+ return {matches, points: user===answer?Number(event.target.closest('.answerBox').dataset.points):0};
+}
+function explanationForGroup(q){
+ const m={
+  '10':'A: речь о названии superfood как маркетинговом термине — заголовок 5. B: перечислены самые полезные продукты и их польза — 8. C: показано, как образ продукта работает на продажи — 7. D: продукт может быть обработан с сахаром и уже не всегда полезен — 3. E: важно не только качество, но и количество — 4. F: полезная еда может быть дешёвой — 6. G: идеальная диета индивидуальна — 1.',
+  '11':'A = 3: расстояние от Москвы “not that far by Russian standards”. B = 1: Казань — дом выдающейся архитектуры. C = 4: эта территория была выбрана как место проживания. D = 6: место стоит посетить во время путешествия по региону. E = 7: мечеть служит домом для коллекции древних книг. F = 5: восстановление завершили к 1000-летию города.',
+  '1':'Это задание проверяется по аудиотексту. Сравните каждую позицию A–F с ключом.',
+  '2':'Это задание проверяется по аудиотексту. 1 = True, 2 = False, 3 = Not stated.'
+ };
+ return m[q]||'';
+}
+function updateScore(){
+ let checkedCount=checked.size, correctTasks=0, primary=0, details=[];
+ checked.forEach((v,q)=>{ if(v.fullCorrect) correctTasks++; primary += v.points; details.push(`${q}: ${v.points} б.`); });
+ document.getElementById('progressPill').textContent=`Проверено: ${checkedCount}/36`;
+ document.getElementById('scoreText').textContent = checkedCount<36 ? `Пока проверено: ${checkedCount}/36. Первичные баллы за тестовую часть: ${primary}/42` : `Готово: ${correctTasks}/36 полностью правильных заданий. Первичные баллы за тестовую часть: ${primary}/42`;
+ document.getElementById('scoreDetails').innerHTML = checkedCount ? `<p class="small">Письмо и эссе проверяет учитель отдельно: до 20 баллов. С учётом письменной речи максимум за письменную часть — 62 первичных балла.</p><p class="small">Баллы по проверенным заданиям: ${details.join('; ')}</p>` : '';
+}
+document.addEventListener('click', e=>{
+ if(!e.target.classList.contains('checkBtn')) return;
+ const box=e.target.closest('.answerBox'), input=box.querySelector('input'), fb=box.querySelector('.feedback');
+ const q=box.dataset.q, type=box.dataset.type, answer=norm(box.dataset.answer), answers=(box.dataset.answers?box.dataset.answers.split('|').map(norm):[answer]);
+ const user=norm(input.value);
+ if(!user){fb.className='feedback bad';fb.textContent='Сначала введите ответ.';return;}
+ let ok=answers.includes(user), points=0, matches=null;
+ if(type && type.startsWith('group')){ const gs=groupScore(type,user,answer); points=gs.points; matches=gs.matches; ok=(user===answer); }
+ else { points=ok?1:0; }
+ input.value=user; input.disabled=true; e.target.disabled=true;
+ checked.set(q,{fullCorrect:ok, points});
+ if(ok){fb.className='feedback ok';fb.innerHTML=`Верно. Правильный ответ: <span class="correct">${answer}</span>. Баллы: ${points}.`;}
+ else{
+  const exp = box.dataset.exp || explanationForGroup(q);
+  const matchText = matches!==null ? `<br>Совпало позиций: ${matches}. Баллы: ${points}.` : `<br>Баллы: ${points}.`;
+  fb.className='feedback bad';fb.innerHTML=`Неверно. Правильный ответ: <span class="correct">${answer}</span>.${matchText}${Number(q)>=10?`<div class="explain"><b>Объяснение:</b> ${exp}</div>`:''}`;
+ }
+ updateScore();
+});
+document.addEventListener('input', e=>{ if(e.target.tagName==='INPUT') e.target.value=e.target.value.toUpperCase(); });
+updateScore();
+</script>
+</body>
+</html>
